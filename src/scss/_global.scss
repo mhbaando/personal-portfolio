@@ -1,0 +1,31 @@
+/* Styles Guud oo an ku xirneyn page gooni ah  
+ * HTML, BODY => Full width kadhig
+ * li => stylka ka baabi
+ * Anchor Tag => asna stylka ka baabi'
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: $primary-body;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
