@@ -1,6 +1,6 @@
-import "./App.scss";
+import { Home } from "./Pages/index";
 function App() {
-  return <h1>hello</h1>;
+  return <Home />;
 }
 
 export default App;

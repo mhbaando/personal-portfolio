@@ -1,0 +1,25 @@
+/**
+* filkaan waxa ka hlynaa calss yo helpers ah oo naga cawinaya inaa meel kasta u isticmaali karno
+*/
+
+// Common Containers
+.section {
+  padding: 0 3.125rem;
+
+  @media (max-width: 650px) {
+    padding: 0 20px;
+  }
+}
+.container {
+  max-width: 82rem;
+  margin: 0 auto;
+}
+
+// content conrainers
+.section-content {
+  padding: 0 100px;
+}
+.container-content {
+  max-width: 1086px;
+  margin: 0 auto;
+}

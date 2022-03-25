@@ -3,4 +3,4 @@
  * waxa walba oo folderkan uga baahano intaa ayan kasoo adynaa
  */
 
-export { default as Menus } from "./Navigation";
+export { default as menus } from "./Navigation";

@@ -27,6 +27,6 @@ please also check my social networks with this tag `mhbaando`
 - type `npm run dev` to run the application on a local host
 - and dont forget to give this repo a star
 
-# SCREENSHOT OF THE WEBSITE
+## SCREENSHOT OF THE WEBSITE
 
 ![](src/Assets/HomePage.png)
