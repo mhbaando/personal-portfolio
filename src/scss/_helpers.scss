@@ -18,8 +18,37 @@
 // content conrainers
 .section-content {
   padding: 0 100px;
+  @media (max-width: 650px) {
+    padding: 0 40px;
+  }
 }
+
 .container-content {
   max-width: 1086px;
   margin: 0 auto;
+}
+
+// qari over flowga marku mobile menuga furanyahy
+.overflow-hidden {
+  overflow: hidden;
+}
+
+// menuga marku active yhay
+.active {
+  li {
+    color: $secondary-orange !important;
+  }
+
+  &::after {
+    content: "";
+    bottom: -40%;
+    left: 0%;
+    width: 100% !important;
+    height: 2px;
+    position: absolute;
+
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color: $secondary-orange;
+  }
 }

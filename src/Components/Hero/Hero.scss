@@ -1,0 +1,144 @@
+.mh__hero {
+  @include flex(space-between, center);
+  width: 100%;
+
+  @media (max-width: 990px) {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+}
+
+.mh__hero-content {
+  flex: 1;
+
+  h1 {
+    font-size: 60px;
+    line-height: 25px;
+
+    color: $white-color;
+    font-family: $raleway-font;
+
+    @media (max-width: 450px) {
+      font-size: 45px;
+    }
+
+    @media (max-width: 360px) {
+      font-size: 35px;
+    }
+  }
+
+  span {
+    color: $secondary-orange;
+  }
+
+  .desc {
+    font-size: 18px;
+    line-height: 180%;
+
+    color: $white-color;
+    margin-bottom: 25px;
+    font-family: $roboto-font;
+  }
+  @media (max-width: 990px) {
+    width: 100%;
+  }
+
+  .socials {
+    @include flex(flex-start, center);
+    margin-bottom: 25px;
+
+    .github,
+    .linkedIn {
+      display: flex;
+      margin-right: 0;
+      padding: 10px;
+
+      a {
+        @include flex(flex-start, center);
+        img {
+          margin-right: 10px;
+        }
+        color: $primary-body;
+      }
+    }
+
+    .github {
+      background: transparent;
+
+      a {
+        color: $secondary-orange;
+      }
+
+      border: 1px solid $secondary-orange;
+      margin-left: 20px;
+    }
+  }
+}
+
+.mh__hero-image {
+  width: 50%;
+  @include flex(flex-end, flex-end);
+
+  position: relative;
+  z-index: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+
+    max-width: 387px;
+  }
+
+  @media (max-width: 990px) {
+    width: 100%;
+  }
+}
+
+.orange-circle {
+  position: absolute;
+  z-index: -1;
+
+  bottom: 10%;
+  right: -5%;
+
+  height: 457px;
+  width: 457px;
+
+  border-radius: 50%;
+  background-color: $secondary-orange;
+
+  @media (max-width: 1177px) {
+    width: 400px;
+    height: 400px;
+
+    bottom: 18%;
+    right: 0%;
+  }
+  @media (max-width: 650px) {
+    width: 400px;
+    height: 400px;
+  }
+
+  @media (max-width: 450px) {
+    width: 350px;
+    height: 350px;
+
+    left: -5%;
+    top: 5%;
+  }
+
+  @media (max-width: 390px) {
+    width: 350px;
+    height: 350px;
+
+    left: -9%;
+    top: 5%;
+  }
+  @media (max-width: 320px) {
+    width: 300px;
+    height: 300px;
+
+    left: -15%;
+    top: 5%;
+  }
+}

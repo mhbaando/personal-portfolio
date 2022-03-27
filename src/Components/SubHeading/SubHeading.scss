@@ -1,0 +1,18 @@
+.mh__subheading {
+  @include flex(flex-start, center);
+}
+
+.horizentalLine {
+  width: 20px;
+  height: 2px;
+  background-color: $secondary-orange;
+  margin-right: 10px;
+}
+
+.title {
+  text-transform: uppercase;
+  color: $white-color;
+  font-family: $roboto-font;
+  font-size: 13px;
+  letter-spacing: 1px;
+}

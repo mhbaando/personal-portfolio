@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import images from "../../Constants/images";
 import { menus } from "../../Data/index";
@@ -10,6 +10,14 @@ import "./Navigation.scss";
 
 const Menus = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  // bodga scrolka ka xir hadii mobile menuga lafuray
+  useEffect(() => {
+    const body = document.querySelector("body");
+    isOpen
+      ? body.classList.add("overflow-hidden")
+      : body.classList.remove("overflow-hidden");
+  }, [isOpen]);
 
   // overlay varients
   const overlay = {
@@ -33,7 +41,11 @@ const Menus = () => {
   // list menu items
   const menuItems = menus.map((menu, index) => {
     return (
-      <a key={menu.name + index} href={menu.link}>
+      <a
+        key={menu.name + index}
+        href={menu.link}
+        className={`${menu.name === "Home" && "active"}`}
+      >
         <li>{menu.name}</li>
       </a>
     );
@@ -56,25 +68,14 @@ const Menus = () => {
               <Button type="button" className="mh__cta-btn">
                 Contact Me
               </Button>
-              {isOpen ? (
-                <motion.div
-                  variants={mobileVarients}
-                  initial="hidden"
-                  animate="show"
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
-                >
-                  <RiCloseFill onClick={() => setIsOpen(false)} />
-                </motion.div>
-              ) : (
-                <motion.div
-                  variants={mobileVarients}
-                  initial="hidden"
-                  animate="show"
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
-                >
-                  <BiMenuAltRight onClick={() => setIsOpen(true)} />
-                </motion.div>
-              )}
+              <motion.div
+                variants={mobileVarients}
+                initial="hidden"
+                animate="show"
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+              >
+                <BiMenuAltRight onClick={() => setIsOpen(true)} />
+              </motion.div>
             </div>
           </nav>
         </div>
@@ -104,8 +105,10 @@ const Menus = () => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="mh__mobile"
           >
+            <RiCloseFill onClick={() => setIsOpen(false)} />
+
             <ul onClick={() => setIsOpen(false)}>{menuItems}</ul>
-            <Button type="button" className="mh__cta-btn mobile-nav">
+            <Button type="button" className="mobile-nav">
               Contact Me
             </Button>
           </motion.div>
