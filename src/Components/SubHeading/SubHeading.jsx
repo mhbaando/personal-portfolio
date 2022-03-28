@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./SubHeading.scss";
 
 const SubHeading = (props) => {

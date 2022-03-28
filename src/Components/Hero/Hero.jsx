@@ -3,10 +3,11 @@ import "./Hero.scss";
 
 import { SubHeading, Button } from "../index";
 import images from "../../Constants/images";
-import { motion } from "framer-motion";
+import { animations, motion } from "framer-motion";
 import lottie from "lottie-web";
-
+import animationData from "../../Animations/hand.json";
 const Hero = () => {
+  // animationka gacanta
   const handAnimation = useRef(null);
   useEffect(() => {
     lottie.loadAnimation({
@@ -15,26 +16,30 @@ const Hero = () => {
       renderer: "svg",
       loop: true,
       autoplay: true,
-      path: "src/Animations/hand.json",
+      animationData,
     });
   }, []);
+
   return (
     <div className="section-content">
       <div className="container-content">
         <div className="mh__hero">
           <motion.div className="mh__hero-content">
             <SubHeading text="Introduction" />
-            <div className="hello">
+            <motion.div
+              whileInView={{ y: ["-10%", "0%"], opacity: [0, 0.5, 1] }}
+              className="hello"
+            >
               <h1>Hello</h1>
               <div className="hand-animation" ref={handAnimation}></div>
-            </div>
+            </motion.div>
 
-            <motion.h1 whileInView={{ x: ["10%", "0%"], opacity: [0, 1] }}>
+            <motion.h1 whileInView={{ x: ["10%", "0%"], opacity: [0, 0.5, 1] }}>
               I'm <span>Mohamud</span>
             </motion.h1>
             <motion.p
               className="desc"
-              whileInView={{ y: ["30%", "0%"], opacity: [0, 1] }}
+              whileInView={{ y: ["30%", "0%"], opacity: [0, 0.5, 1] }}
             >
               Since begining my journey as a freelance deigner and Devloper
               nearby <span>2 years</span> i've done remote work for
@@ -42,7 +47,10 @@ const Hero = () => {
               consulted for startup and collabrated with
               <span> Talented people </span>to create digital products
             </motion.p>
-            <motion.div className="socials" whileInView={{ y: ["-50%", "0%"] }}>
+            <motion.div
+              className="socials"
+              whileInView={{ y: ["-50%", "0%"], opacity: [0, 0.5, 1] }}
+            >
               <Button type="button" className="linkedIn">
                 <a href="https://www.linkedin.com/in/mhbaando" target="_blank">
                   <img src={images.linkedIn} alt="LinkedIn Logo" /> Linked In
