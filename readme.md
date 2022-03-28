@@ -1,22 +1,25 @@
 ## Abuot Me
 
-i am Mohamud Abshir, I am a professional Front-End developer, with almost 2
-years of experience in developing and designing web applications, landing pages,
-personal sites, corporate websites, and so on using various technologies such su
-`HTML`, `CSS`, `JavaScript`, `React`, `Angular`, `Node js`, `SCSS`, `Bootstrap`,
-also i develop websites using no code platforms such us `webflow` & `wordpress`
-also i am a `UI/UX` designer with background of `graphic design`,
-`Illustrations`, `2D animations` and little of `Digital Marketing`
+i am<b> Mohamud Abshir </b>, I am a professional Front-End developer, with
+almost <b>2 years </b>of experience in developing and designing web
+applications, landing pages, personal sites, corporate websites, and so on using
+various technologies such su <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>,
+<b>React</b>, <b>Angular</b>, <b>Node js</b>, <b>SCSS</b>, <b>Bootstrap</b>.
+also i develop websites using no code platforms such us <b>webflow</b> &
+<b>wordpress</b> also i am a <b>UI/UX</b> designer with background of <b>Graphic
+Design</b>, <b>llustrations</b>, <b>2D animations</b> and a little bit of
+<b>Digital Marketing</b>
 
 `Please dont Hesitate to contact me if you have a project i can contribute`
 
-## Please Check my Social Netwok and give a follow
+## Please follow Me on Mysocial
 
-please also check my social networks with this tag `mhbaando`
+please also check my social networks with this tag <b>mhbaando</b>
 
 - <https://www.facebook.com/mhbaando>
 - <https://www.instagram.com/mhbaando>
 - <https://www.linkedin.com/in/mhbaando>
+- <https://www.twitter.com/mhbaando>
 
 ## CLONE AND RUN THE PROJECT
 
