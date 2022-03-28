@@ -1,28 +1,48 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Hero.scss";
 
 import { SubHeading, Button } from "../index";
 import images from "../../Constants/images";
+import { motion } from "framer-motion";
+import lottie from "lottie-web";
 
 const Hero = () => {
+  const handAnimation = useRef(null);
+  useEffect(() => {
+    lottie.loadAnimation({
+      // where will be rendered in the dom
+      container: handAnimation.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: "src/Animations/hand.json",
+    });
+  }, []);
   return (
     <div className="section-content">
       <div className="container-content">
         <div className="mh__hero">
-          <div className="mh__hero-content">
+          <motion.div className="mh__hero-content">
             <SubHeading text="Introduction" />
-            <h1>Hello</h1>
-            <h1>
+            <div className="hello">
+              <h1>Hello</h1>
+              <div className="hand-animation" ref={handAnimation}></div>
+            </div>
+
+            <motion.h1 whileInView={{ x: ["10%", "0%"], opacity: [0, 1] }}>
               I'm <span>Mohamud</span>
-            </h1>
-            <p className="desc">
+            </motion.h1>
+            <motion.p
+              className="desc"
+              whileInView={{ y: ["30%", "0%"], opacity: [0, 1] }}
+            >
               Since begining my journey as a freelance deigner and Devloper
               nearby <span>2 years</span> i've done remote work for
               <span> Agencies </span>
               consulted for startup and collabrated with
               <span> Talented people </span>to create digital products
-            </p>
-            <div className="socials">
+            </motion.p>
+            <motion.div className="socials" whileInView={{ y: ["-50%", "0%"] }}>
               <Button type="button" className="linkedIn">
                 <a href="https://www.linkedin.com/in/mhbaando" target="_blank">
                   <img src={images.linkedIn} alt="LinkedIn Logo" /> Linked In
@@ -33,12 +53,23 @@ const Hero = () => {
                   <img src={images.gitHub} alt="GitHub Logo" /> GitHub
                 </a>
               </Button>
-            </div>
-          </div>
-          <div className="mh__hero-image">
-            <img src={images.mohamud} alt="Mohamud Ali Abshir" />
-            <div className="orange-circle"></div>
-          </div>
+            </motion.div>
+          </motion.div>
+          <motion.div className="mh__hero-image">
+            <motion.img
+              whileInView={{
+                scale: ["60%", "100%"],
+                opacity: [0, 1],
+                transition: { delay: 0.15 },
+              }}
+              src={images.mohamud}
+              alt="Mohamud Ali Abshir"
+            />
+            <motion.div
+              whileInView={{ scale: [0.5, 1], opacity: [0, 1] }}
+              className="orange-circle"
+            ></motion.div>
+          </motion.div>
         </div>
       </div>
     </div>

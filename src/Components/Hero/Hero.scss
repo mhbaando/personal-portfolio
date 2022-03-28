@@ -11,13 +11,24 @@
 .mh__hero-content {
   flex: 1;
 
+  .hello {
+    @include flex(flex-start, center);
+
+    // animated div
+    .hand-animation {
+      svg {
+        width: 100px !important;
+      }
+    }
+  }
+
   h1 {
     font-size: 60px;
     line-height: 25px;
 
     color: $white-color;
     font-family: $raleway-font;
-
+    margin: 0;
     @media (max-width: 450px) {
       font-size: 45px;
     }
@@ -38,6 +49,7 @@
     color: $white-color;
     margin-bottom: 25px;
     font-family: $roboto-font;
+    margin-top: 25px;
   }
   @media (max-width: 990px) {
     width: 100%;
@@ -85,6 +97,7 @@
   img {
     width: 100%;
     height: auto;
+    transform-origin: bottom;
 
     max-width: 387px;
   }
