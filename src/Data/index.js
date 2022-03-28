@@ -4,3 +4,5 @@
  */
 
 export { default as menus } from "./Navigation";
+// service data
+export { default as ServiceData } from "./ServiceData";

@@ -18,3 +18,6 @@ export { default as AboutInfo } from "./AboutInfo/AboutInfo";
 
 // heading
 export { default as Heading } from "./Heading/Heading";
+
+// service area
+export { default as Services } from "./Services/Services";

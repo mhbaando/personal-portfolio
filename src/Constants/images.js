@@ -20,6 +20,13 @@ import Figma from "../Assets/Figma.png";
 import Ae from "../Assets/AfterEffect.png";
 import Ai from "../Assets/illustrator.png";
 import Ps from "../Assets/PhotoShop.png";
+
+// services
+import UIUX from "../Assets/UI:UX.png";
+import FrontEnde from "../Assets/Front-end.png";
+import Webflow from "../Assets/Webflow.png";
+import Wordpress from "../Assets/Wordpress.png";
+
 export default {
   logo,
   mohamud,
@@ -39,4 +46,10 @@ export default {
   Ae,
   Ai,
   Ps,
+
+  // services images
+  UIUX,
+  FrontEnde,
+  Webflow,
+  Wordpress,
 };

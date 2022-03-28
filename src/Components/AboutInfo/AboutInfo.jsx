@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import "./AboutInfo.scss";
 import Lottie from "lottie-web";
-import animationData from "../../Animations/personCoding.json";
-import { SubHeading, Heading } from "../../Components/index";
+
+import { SubHeading, Heading, Services } from "../../Components/index";
 import images from "../../Constants/images";
 import { motion } from "framer-motion";
 
@@ -64,6 +64,7 @@ const AboutInfo = () => {
                 <img src={images.Ps} alt="Adobe Photoshop Logo" />
               </motion.div>
             </div>
+            <Services />
           </div>
         </div>
       </div>
@@ -82,13 +83,13 @@ function animateLottie(aboutBg) {
       renderer: "svg",
       loop: false,
       autoplay: false,
-      animationData,
+      path: "https://assets1.lottiefiles.com/packages/lf20_wMezg6.json",
     });
     function animatebodymovin(duration) {
       const scrollPosition = window.scrollY;
       const maxFrame = anim.totalFrames;
 
-      const frame = (maxFrame / 100) * (scrollPosition / (duration / 100));
+      const frame = maxFrame * ((scrollPosition * 4.2) / duration);
       anim.goToAndStop(frame, true);
     }
 
