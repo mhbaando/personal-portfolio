@@ -1,0 +1,67 @@
+.mh__Projects {
+  @include flex(space-between, flex-start);
+  width: 100%;
+  height: 100%;
+
+  flex-wrap: wrap;
+  flex-basis: auto;
+  flex-grow: 1;
+}
+
+.project-header {
+  @include flex(space-between, center);
+  margin-top: 100px;
+
+  @media (max-width: 780px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.filterfor {
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+
+  @media (max-width: 780px) {
+    margin-top: 40px;
+  }
+  ul {
+    @include flex(flex-start, center);
+    flex-wrap: wrap;
+
+    li {
+      @include roboto-font(16px, 400, $white-color);
+
+      cursor: pointer;
+      margin-bottom: 20px;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.active {
+  color: $secondary-orange !important;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+
+  &::after {
+    content: "";
+    bottom: -40%;
+    left: 0%;
+    width: 100% !important;
+    height: 2px;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+
+    @media (max-width: 950px) {
+      bottom: 0%;
+    }
+
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color: $secondary-orange;
+  }
+}

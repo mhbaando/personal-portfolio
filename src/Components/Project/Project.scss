@@ -1,0 +1,97 @@
+.mh__project {
+  @include flex(flex-start, center, column);
+  width: 32%;
+  margin-top: 50px;
+
+  cursor: pointer;
+  padding-bottom: 24px;
+
+  flex-basis: auto;
+  flex-grow: 1;
+
+  border-radius: 10px;
+  background-color: $primary-soft;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+
+  &:not(:nth-child(3n)) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 1270px) {
+    width: 32;
+
+    &:not(:nth-child(3n)) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(2n)) {
+      margin-right: 20px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+
+    &:not(:nth-child(3n)) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(2n)) {
+      margin-right: 0;
+    }
+  }
+  .thumbnail {
+    width: 100%;
+    height: 250px;
+    img {
+      border-radius: 10px 10px 0 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+.project-content {
+  padding: 0 24px;
+  width: 100%;
+
+  h1 {
+    font-size: 25px;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: $roboto-font;
+    font-size: 15px;
+    line-height: 150%;
+    color: $light-white;
+  }
+}
+
+.tags {
+  width: 100%;
+  padding: 0 24px;
+  margin-top: 20px;
+  @include flex(flex-start, center);
+
+  .tag {
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+
+    color: $secondary-orange;
+    background-color: $primary-dark;
+
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+
+    p {
+      font-family: $roboto-font;
+      font-size: 15px;
+    }
+  }
+}

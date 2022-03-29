@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Header, About } from "../../Containers/index";
+import { Header, About, Projects } from "../../Containers/index";
 const Home = () => {
   return (
     <>
       <Header />
       <About />
+      <Projects />
     </>
   );
 };

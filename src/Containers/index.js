@@ -7,3 +7,6 @@ export { default as Header } from "./Header/Header";
 
 // About
 export { default as About } from "./About/About";
+
+// Propjects
+export { default as Projects } from "./Projects/Projects";

@@ -12,7 +12,7 @@ const Services = () => {
           <motion.div
             whileInView={{
               opacity: [0, 1],
-              x: [index % 2 === 0 ? "50%" : "-50%", "0%"],
+              y: [index % 2 === 0 ? "5%" : "-5%", "0%"],
             }}
             className="service"
             key={index + service.name}

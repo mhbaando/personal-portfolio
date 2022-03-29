@@ -27,6 +27,13 @@ import FrontEnde from "../Assets/Front-end.png";
 import Webflow from "../Assets/Webflow.png";
 import Wordpress from "../Assets/Wordpress.png";
 
+// prject Images
+import VgStore from "../Assets/vgstore.png";
+import SimadiLab from "../Assets/simad-ilab.png";
+import DeeroAdvert from "../Assets/Deeroadvert.png";
+import Sitco from "../Assets/Sitco.png";
+import Medisom from "../Assets/Medisom.png";
+import Khebra from "../Assets/Khebra.png";
 export default {
   logo,
   mohamud,
@@ -52,4 +59,12 @@ export default {
   FrontEnde,
   Webflow,
   Wordpress,
+
+  // priject images
+  VgStore,
+  SimadiLab,
+  DeeroAdvert,
+  Sitco,
+  Medisom,
+  Khebra,
 };

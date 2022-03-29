@@ -21,3 +21,6 @@ export { default as Heading } from "./Heading/Heading";
 
 // service area
 export { default as Services } from "./Services/Services";
+
+// project component
+export { default as Project } from "./Project/Project";

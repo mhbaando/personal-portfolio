@@ -2,7 +2,7 @@ import images from "../Constants/images";
 const ServiceData = [
   {
     name: "UI/UX",
-    desc: "I can design beautiful, clean, simple and modern website & Apps",
+    desc: "I can design beautiful, clean, simple and modern websites & Apps",
     icon: images.UIUX,
   },
   {

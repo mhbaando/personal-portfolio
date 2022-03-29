@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const AboutInfo = () => {
   const titleVarient = {
-    inView: { y: ["50%", "0%"], opacity: [0, 0.5, 1] },
+    inView: { y: ["5%", "0%"], opacity: [0, 0.5, 1] },
   };
 
   const aboutBg = useRef(null);
