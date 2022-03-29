@@ -1,0 +1,19 @@
+.mh__client {
+  @include flex(space-between, center);
+  width: 100%;
+
+  // scroll barka qari
+  scrollbar-width: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .client {
+    width: 203px;
+    margin-top: 20px;
+  }
+}

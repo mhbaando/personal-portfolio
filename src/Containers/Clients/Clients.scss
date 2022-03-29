@@ -1,0 +1,5 @@
+.mh__clients {
+  @include flex(space-between, flex-start, column);
+
+  margin-top: 100px;
+}

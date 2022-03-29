@@ -34,13 +34,20 @@ import DeeroAdvert from "../Assets/Deeroadvert.png";
 import Sitco from "../Assets/Sitco.png";
 import Medisom from "../Assets/Medisom.png";
 import Khebra from "../Assets/Khebra.png";
+
+// clients Logo
+import SimadiLabLogo from "../Assets/simadilab_logo.png";
+import DeeroAdvertLogo from "../Assets/deero_logo.png";
+import MedisomLogo from "../Assets/medisom_logo.png";
+import SitcoLogo from "../Assets/sitco_logo.png";
+
 export default {
   logo,
   mohamud,
   gitHub,
   linkedIn,
 
-  // tech stack export
+  // swirada qrybta xirafda
   HTML,
   CSS,
   Sass,
@@ -54,17 +61,23 @@ export default {
   Ai,
   Ps,
 
-  // services images
+  // saw services
   UIUX,
   FrontEnde,
   Webflow,
   Wordpress,
 
-  // priject images
+  // swirada qeybta priject
   VgStore,
   SimadiLab,
   DeeroAdvert,
   Sitco,
   Medisom,
   Khebra,
+
+  // logooyinka clientga
+  SimadiLabLogo,
+  DeeroAdvertLogo,
+  MedisomLogo,
+  SitcoLogo,
 };

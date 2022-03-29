@@ -10,3 +10,9 @@ export { default as About } from "./About/About";
 
 // Propjects
 export { default as Projects } from "./Projects/Projects";
+
+// client containerkooda
+export { default as Clients } from "./Clients/Clients";
+
+// Counter
+export { default as CounterContainer } from "./Counter/CounterContainer";

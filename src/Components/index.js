@@ -24,3 +24,9 @@ export { default as Services } from "./Services/Services";
 
 // project component
 export { default as Project } from "./Project/Project";
+
+// qerybta clinteska logyinkada
+export { default as Client } from "./Client/Client";
+
+// counter
+export { default as Counter } from "./Counter/Counter";
