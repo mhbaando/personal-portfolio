@@ -1,0 +1,46 @@
+.mh__ctaFooter {
+  @include flex(space-between, center);
+  width: 100%;
+
+  padding: 2rem;
+  border-radius: 20px;
+  margin-top: 100px;
+
+  background: linear-gradient(
+      360deg,
+      $primary-body 0%,
+      rgba(196, 196, 196, 0) 238.36%
+    ),
+    url("../../Assets/cta-bg.jpg");
+
+  @media (max-width: 780px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content-cta {
+    h2 {
+      @include raleway-font(30px, 700, $secondary-orange);
+
+      @media (max-width: 650px) {
+        font-size: 25px;
+      }
+
+      span {
+        color: $white-color;
+      }
+    }
+
+    p {
+      margin-top: 10px;
+      @include roboto-font(16px, 400, #ffffffb2);
+      @media (max-width: 780px) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  .cta-button {
+    display: flex;
+  }
+}

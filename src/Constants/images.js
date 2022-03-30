@@ -41,6 +41,14 @@ import DeeroAdvertLogo from "../Assets/deero_logo.png";
 import MedisomLogo from "../Assets/medisom_logo.png";
 import SitcoLogo from "../Assets/sitco_logo.png";
 
+// Cta-background image
+import CTABG from "../Assets/cta-bg.jpg";
+
+//info icons
+import locationIcon from "../Assets/location.png";
+import phoneIcon from "../Assets/phone.png";
+import emailIcon from "../Assets/email.png";
+
 export default {
   logo,
   mohamud,
@@ -80,4 +88,12 @@ export default {
   DeeroAdvertLogo,
   MedisomLogo,
   SitcoLogo,
+
+  // sawrka backgroundka ctaga ku jira
+  CTABG,
+
+  // iconska qeybta informationka
+  locationIcon,
+  phoneIcon,
+  emailIcon,
 };

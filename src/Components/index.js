@@ -29,4 +29,10 @@ export { default as Project } from "./Project/Project";
 export { default as Client } from "./Client/Client";
 
 // counter
-export { default as Counter } from "./Counter/Counter";
+export { default as CTA } from "./CTA/CTA";
+
+//ContactInfo
+export { default as Contactinfo } from "./ContactInfo/ContactInfo";
+
+//ContactForm
+export { default as ContactForm } from "./ContactForm/ContactForm";

@@ -1,0 +1,7 @@
+.mh__contacts {
+  @include flex(space-between, flex-start);
+  margin-top: 100px;
+  @media (max-width: 790px) {
+    flex-direction: column;
+  }
+}

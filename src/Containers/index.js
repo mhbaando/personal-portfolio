@@ -14,5 +14,8 @@ export { default as Projects } from "./Projects/Projects";
 // client containerkooda
 export { default as Clients } from "./Clients/Clients";
 
-// Counter
-export { default as CounterContainer } from "./Counter/CounterContainer";
+// CTA
+export { default as CTAContainer } from "./CTAContainer/CTAContainer";
+
+// contacts
+export { default as Contacts } from "./Contacts/Contacts";

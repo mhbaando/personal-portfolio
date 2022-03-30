@@ -1,0 +1,86 @@
+.mh__contactForm {
+  width: 50%;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+
+  background: linear-gradient(360deg, $primary-body 0%, $primary-soft 250%);
+
+  @media (max-width: 790px) {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+form {
+  @include flex(space-between, center, column);
+  width: 100%;
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 1rem;
+
+    border: 0;
+    outline: none;
+
+    color: $white-color;
+    margin-bottom: 15px;
+
+    border-radius: 10px;
+    background: $primary-soft;
+
+    @include roboto-font(16px, 400, $white-color);
+
+    &::placeholder {
+      @include roboto-font(16px, 400, $light-white);
+    }
+  }
+  textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+  }
+
+  .submit-button {
+    display: flex;
+    margin-top: 10px;
+    // width: 30%;
+    justify-content: center;
+  }
+
+  div {
+    @include flex(space-between, center);
+  }
+}
+
+// input out fill marku nqdo insan wax style ah sinins
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+
+// qari flaarha numberka
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.seccess {
+  @include roboto-font(18px, 400, green);
+  line-height: 150%;
+}
+
+.error {
+  @include roboto-font(18px, 400, red);
+  line-height: 150%;
+}

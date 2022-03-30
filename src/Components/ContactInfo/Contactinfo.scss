@@ -1,0 +1,44 @@
+.mh__contactInfo {
+  @include flex(space-between, flex-start, column);
+  width: 50%;
+  @media (max-width: 790px) {
+    width: 100%;
+  }
+}
+
+.content-info {
+  max-width: 70%;
+  @media (max-width: 670px) {
+    max-width: 100%;
+  }
+  .message {
+    @include roboto-font(16px, 400, $light-white);
+    margin: 25px 0;
+
+    line-height: 150%;
+  }
+}
+
+.addresses {
+  @include flex(flex-start, center);
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .address {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .info {
+    margin-left: 15px;
+
+    p {
+      @include roboto-font(16px, 400, $light-white);
+      line-height: 130%;
+    }
+  }
+}

@@ -4,7 +4,8 @@ import {
   About,
   Projects,
   Clients,
-  CounterContainer,
+  CTAContainer,
+  Contacts,
 } from "../../Containers/index";
 const Home = () => {
   return (
@@ -13,7 +14,8 @@ const Home = () => {
       <About />
       <Projects />
       <Clients />
-      <CounterContainer />
+      <CTAContainer />
+      <Contacts />
     </>
   );
 };
