@@ -49,6 +49,12 @@ import locationIcon from "../Assets/location.png";
 import phoneIcon from "../Assets/phone.png";
 import emailIcon from "../Assets/email.png";
 
+// social icons
+import twitter from "../Assets/twiitericon.svg";
+import linkedin_icon from "../Assets/linkedinIcon.svg";
+import showwcase from "../Assets/showwcase.svg";
+import facebook from "../Assets/facebook.svg";
+
 export default {
   logo,
   mohamud,
@@ -96,4 +102,10 @@ export default {
   locationIcon,
   phoneIcon,
   emailIcon,
+
+  // social icons
+  twitter,
+  linkedin_icon,
+  showwcase,
+  facebook,
 };

@@ -58,3 +58,24 @@
     background-color: $secondary-orange;
   }
 }
+
+//
+.mh__cta-btn {
+  border: 0;
+  outline: none;
+
+  margin-right: 20px;
+  border-radius: 7px;
+  padding: 0.6rem 1.3rem;
+
+  @include raleway-font(17px, 600, $primary-body);
+  background: linear-gradient(
+    93.43deg,
+    $secondary-yello 2.58%,
+    $secondary-orange 105.11%
+  );
+}
+
+.dark {
+  background-color: $primary-dark;
+}

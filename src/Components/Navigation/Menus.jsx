@@ -65,9 +65,18 @@ const Menus = () => {
             </div>
 
             <div className="mh__cta">
-              <Button type="button" className="mh__cta-btn">
-                Contact Me
-              </Button>
+              <a href="https:/twitter.com/mhbaando" target="_blank">
+                <img src={images.twitter} alt="my Twitter Account" />
+              </a>
+              <a href="https://linkedin.com/in/mhbaando" target="_blank">
+                <img src={images.linkedin_icon} alt="my linkedin Account" />
+              </a>
+              <a href="https://mhbaando.showwcase.com" target="_blank">
+                <img src={images.showwcase} alt="my showwcase Account" />
+              </a>
+              <a href="https://facebook.com/mhbaando" target="_blank">
+                <img src={images.facebook} alt="my facebook Account" />
+              </a>
               <motion.div
                 variants={mobileVarients}
                 initial="hidden"
@@ -106,11 +115,7 @@ const Menus = () => {
             className="mh__mobile"
           >
             <RiCloseFill onClick={() => setIsOpen(false)} />
-
             <ul onClick={() => setIsOpen(false)}>{menuItems}</ul>
-            <Button type="button" className="mobile-nav">
-              Contact Me
-            </Button>
           </motion.div>
         )}
       </AnimatePresence>

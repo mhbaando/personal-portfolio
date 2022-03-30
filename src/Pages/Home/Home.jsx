@@ -6,6 +6,7 @@ import {
   Clients,
   CTAContainer,
   Contacts,
+  Footer,
 } from "../../Containers/index";
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Clients />
       <CTAContainer />
       <Contacts />
+      <Footer />
     </>
   );
 };

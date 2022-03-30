@@ -12,7 +12,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import './src/scss/variables','./src/scss/mixins';`,
+        additionalData: `@import './src/scss/_normalizer.scss', './src/scss/variables','./src/scss/mixins';`,
       },
     },
   },

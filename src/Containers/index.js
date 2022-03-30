@@ -19,3 +19,6 @@ export { default as CTAContainer } from "./CTAContainer/CTAContainer";
 
 // contacts
 export { default as Contacts } from "./Contacts/Contacts";
+
+// footer
+export { default as Footer } from "./Footer/Footer";
