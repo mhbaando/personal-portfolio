@@ -62,16 +62,9 @@ const Menus = () => {
       <div className="section">
         <div className="container">
           <nav className="mh__nav">
-            <Link
-              to="/"
-              spy={true}
-              smooth={true}
-              offset={-150}
-              duration={500}
-              className="mh__brand"
-            >
+            <div>
               <img src={images.logo} alt="MhBaando Logo" />
-            </Link>
+            </div>
 
             <div className="mh__links">
               <ul>{menuItems}</ul>

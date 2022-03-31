@@ -2,7 +2,7 @@
  * filkaan waa irida laga galo data folderkan
  * waxa walba oo folderkan uga baahano intaa ayan kasoo adynaa
  */
-import logo from "../Assets/logo.svg";
+import logo from "../Assets/logo.svg 17-53-10-584.svg";
 import mohamud from "../Assets/mohamud.png";
 import gitHub from "../Assets/github.svg";
 import linkedIn from "../Assets/LinkedIn.svg";
