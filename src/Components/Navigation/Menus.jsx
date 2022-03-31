@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 
 import images from "../../Constants/images";
 import { menus } from "../../Data/index";
-import { Button } from "../index";
+
 import { BiMenuAltRight } from "react-icons/bi";
 import { RiCloseFill } from "react-icons/ri";
+
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-scroll";
 import "./Navigation.scss";
 
 const Menus = () => {
@@ -41,13 +43,17 @@ const Menus = () => {
   // list menu items
   const menuItems = menus.map((menu, index) => {
     return (
-      <a
+      <Link
         key={menu.name + index}
-        href={menu.link}
-        className={`${menu.name === "Home" && "active"}`}
+        activeClass="active"
+        to={menu.link}
+        spy={true}
+        smooth={true}
+        offset={-150}
+        duration={500}
       >
         <li>{menu.name}</li>
-      </a>
+      </Link>
     );
   });
 
@@ -56,9 +62,16 @@ const Menus = () => {
       <div className="section">
         <div className="container">
           <nav className="mh__nav">
-            <div className="mh__brand">
+            <Link
+              to="/"
+              spy={true}
+              smooth={true}
+              offset={-150}
+              duration={500}
+              className="mh__brand"
+            >
               <img src={images.logo} alt="MhBaando Logo" />
-            </div>
+            </Link>
 
             <div className="mh__links">
               <ul>{menuItems}</ul>

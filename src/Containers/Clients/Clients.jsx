@@ -5,7 +5,7 @@ import { ClientsData } from "../../Data/index";
 
 const Clients = () => {
   return (
-    <div className="section-content">
+    <div className="section-content" id="clients">
       <div className="container-content">
         <div className="mh__clients">
           <div>

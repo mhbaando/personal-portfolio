@@ -30,7 +30,7 @@ const Portfolio = () => {
 
   filterTags();
   return (
-    <div className="section-content">
+    <div className="section-content" id="projects">
       <div className="container-content">
         <div className="project-header">
           <div>

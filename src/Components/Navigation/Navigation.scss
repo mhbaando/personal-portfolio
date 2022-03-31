@@ -2,6 +2,7 @@
   @include flex(space-between, center);
   position: sticky;
   top: 0%;
+  width: 100%;
 }
 
 .mh__brand,
@@ -25,6 +26,7 @@
 
     a {
       position: relative;
+      cursor: pointer;
 
       &:not(:last-child) {
         margin-right: 30px;

@@ -8,19 +8,19 @@ const menus = [
   },
   {
     name: "About",
-    link: "#about",
+    link: "about",
   },
   {
     name: "Projects",
-    link: "#projects",
+    link: "projects",
   },
   {
     name: "Clients",
-    link: "#",
+    link: "clients",
   },
   {
     name: "Contacts",
-    link: "#contacts",
+    link: "contacts",
   },
 ];
 

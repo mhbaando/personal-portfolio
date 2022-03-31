@@ -15,7 +15,7 @@ const AboutInfo = () => {
   animateLottie(aboutBg);
 
   return (
-    <div className="section-content">
+    <div className="section-content" id="about">
       <div className="container-content">
         <div className="mh__aboutInfo">
           <div className="animationSVG">
