@@ -6,11 +6,12 @@
   flex-wrap: wrap;
   flex-basis: auto;
   flex-grow: 1;
+  position: relative;
 }
 
 .project-header {
   @include flex(space-between, center);
-  margin-top: 100px;
+  margin: 100px 0 0;
 
   @media (max-width: 780px) {
     flex-direction: column;

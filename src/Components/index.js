@@ -36,3 +36,12 @@ export { default as Contactinfo } from "./ContactInfo/ContactInfo";
 
 //ContactForm
 export { default as ContactForm } from "./ContactForm/ContactForm";
+
+//qrCode generator
+export { default as Qrcode } from "./Qrcode/Qrcode";
+
+// project deatials
+export { default as ProjectDetail } from "./ProjectDetail/ProjectDetail";
+
+// Tags
+export { default as Tags } from "./Tags/Tags";

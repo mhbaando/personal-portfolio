@@ -1,0 +1,17 @@
+.tag {
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+
+  color: $secondary-orange;
+  background-color: $primary-dark;
+
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  p {
+    font-family: $roboto-font;
+    font-size: 15px;
+    color: $secondary-orange;
+  }
+}

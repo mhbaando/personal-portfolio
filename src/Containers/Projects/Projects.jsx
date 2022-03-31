@@ -1,13 +1,32 @@
 import React, { useState } from "react";
 import { ProjectsData } from "../../Data/index";
-import { Project, Heading, SubHeading } from "../../Components/index";
+import {
+  Project,
+  Heading,
+  SubHeading,
+  ProjectDetail,
+} from "../../Components/index";
+import { ProjectsContext } from "../../Context/ProjectsContext";
 import "./Projects.scss";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Portfolio = () => {
   const [activeOne, setActiveOne] = useState({
     item: 0,
     tag: "All",
   });
+
+  const [isOpen, setIsOpen] = useState({
+    name: "",
+    isvisible: false,
+  });
+
+  const choosenNameHandler = (name) => {
+    setIsOpen({
+      name,
+      isvisible: true,
+    });
+  };
 
   filterTags();
   return (
@@ -25,14 +44,15 @@ const Portfolio = () => {
                   <li
                     className={index === activeOne.item ? "active" : ""}
                     key={index}
-                    onClick={() =>
-                      setActiveOne((prev) => {
-                        return {
-                          item: index,
-                          tag: filter,
-                        };
-                      })
-                    }
+                    onClick={() => {
+                      setActiveOne({
+                        item: index,
+                        tag: filter,
+                      });
+                      setIsOpen({
+                        isvisible: false,
+                      });
+                    }}
                   >
                     {filter}
                   </li>
@@ -53,10 +73,25 @@ const Portfolio = () => {
                   name={project.name}
                   desc={project.desc}
                   tags={project.tags}
+                  action={choosenNameHandler}
                 />
               )
             );
           })}
+
+          {/* Project Details  "*/}
+          <ProjectsContext.Provider value={{ isOpen, setIsOpen }}>
+            {isOpen.isvisible && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+                exit={{ opacity: 0 }}
+              >
+                <ProjectDetail name={isOpen.name} />
+              </motion.div>
+            )}
+          </ProjectsContext.Provider>
         </div>
       </div>
     </div>
@@ -73,14 +108,4 @@ function filterTags() {
     });
   });
   return (filters = [...new Set(filters.sort())]);
-}
-
-{
-  /* <Project
-key={project + index}
-thumbnail={project.thumbnail}
-name={project.name}
-desc={project.desc}
-tags={project.tags}
-/> */
 }

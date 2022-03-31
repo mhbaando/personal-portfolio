@@ -55,6 +55,14 @@ import linkedin_icon from "../Assets/linkedinIcon.svg";
 import showwcase from "../Assets/showwcase.svg";
 import facebook from "../Assets/facebook.svg";
 
+// project details img
+import mainSimadiLab from "../Assets/mainsimadilab.png";
+import VgHomePage from "../Assets/VgHomePage-01.png";
+import DeeroHomePage from "../Assets/deeroHomePage-01.png";
+import SitcoHomePage from "../Assets/SitcoHomePage-01.png";
+import medisomHomePage from "../Assets/MedisomHomepage-01.png";
+import khebraHomePage from "../Assets/KhebraHomePage-01.png";
+
 export default {
   logo,
   mohamud,
@@ -108,4 +116,12 @@ export default {
   linkedin_icon,
   showwcase,
   facebook,
+
+  // qeybta prrojectga marka lagu dhufto
+  mainSimadiLab,
+  VgHomePage,
+  DeeroHomePage,
+  SitcoHomePage,
+  medisomHomePage,
+  khebraHomePage,
 };
