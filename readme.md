@@ -1,4 +1,8 @@
-## Abuote Me
+## Abuote Me -
+
+##### [NEW VERSION IS AVAILABLE HERE](https://github.com/mhbaando/Protofolio-NextJs)
+
+---
 
 i am Mohamud Abshir , I am a professional Front-End developer, with almost
 `2 years` of experience in developing and designing web applications, landing
